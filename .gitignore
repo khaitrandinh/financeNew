@@ -1,22 +1,37 @@
-# Bỏ qua thư mục node_modules (cả frontend và backend)
+# === Node modules ===
 node_modules/
-crypto-news-chart/node_modules/
-server/node_modules/
+**/node_modules/
 
-# Bỏ qua các file lock của package manager (nếu không muốn đẩy lên)
+# === Environment files ===
+.env
+**/.env
+
+# === Lock files ===
 yarn.lock
 pnpm-lock.yaml
 
-# Bỏ qua file môi trường chứa thông tin nhạy cảm
-.env
-server/.env
-client/.env
-
-# Bỏ qua thư mục build (nếu có)
+# === Build output ===
 build/
-client/build/
-server/build/
+**/build/
 
-# Bỏ qua các thư mục log, cache
+# === Logs and system files ===
 logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === IDE and OS metadata ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Optional: ignore submodule if still lingering ===
+.gitmodules
+.git/config
+.git/modules/
+
+# === Optional: ignore dist or output folders ===
+dist/
+**/dist/
