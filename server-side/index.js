@@ -52,7 +52,7 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["https://finance-new-self.vercel.app", "http://localhost:3000"];
 app.use(cors({
   origin: allowedOrigins,
   methods: ["GET", "POST"],
