@@ -39,7 +39,7 @@ export default function NewsChart() {
     const fetchNewsData = async () => {
       try {
 
-        const response = await fetch(`http://localhost:8000/api/news`)
+        const response = await fetch(`https://finance-new-8ly5.vercel.app/api/news`)
         
         if (!response.ok) {
           throw new Error(`Server returned ${response.status}`)
